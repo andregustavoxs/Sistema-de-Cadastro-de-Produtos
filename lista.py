@@ -17,3 +17,9 @@ while True:
 print('Lista de compras:')
 for item in lista_de_compras:
     print('-', item)
+
+# Salvando a lista de compras em um arquivo de texto
+nome_arquivo = 'lista_compras.txt'
+with open(nome_arquivo, 'w') as arquivo:
+    for item in lista_de_compras:
+        arquivo.write(item + '\n')
